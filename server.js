@@ -47,7 +47,11 @@ app.get('/about', (req, res) => {
   });
 })
 
-
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs',{
+    pageTitle: 'Projects'
+  })
+})
 
 //registering port to listen to
 app.listen(port, () => {
